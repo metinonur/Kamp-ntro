@@ -41,14 +41,14 @@ namespace ClassMetotDemo
             customerListing.AddCustomer(customer4);
             customerListing.Delete(customer1 );
             Console.WriteLine("------------------------ALLCUSTOMERS-------------------------");
-            foreach (Customer customer in customers)
-            {
-                Console.WriteLine("Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + " No : " + customer.CustomerNo + " Id : " + customer.Id );
-            }
-               
+            // foreach (Customer customer in customers)
+            // {
+            //  Console.WriteLine("Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + " No : " + customer.CustomerNo + " Id : " + customer.Id );
+            // }
+            customerListing.Listing(customers);
                
 
-
+           
 
         }
     }

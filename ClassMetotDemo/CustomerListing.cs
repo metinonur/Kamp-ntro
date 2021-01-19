@@ -6,18 +6,21 @@ namespace ClassMetotDemo
 {
     class CustomerListing
     { 
-        public void Listing(Customer customer) 
+        public void Listing(Customer[] customers) 
         {
-            Console.WriteLine( "Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + " No : " + customer.CustomerNo + " Id : " + customer.Id);
+            foreach (var Customer in customers)
+            {
+                Console.WriteLine(Customer.CustomerName + " " + Customer.CustomerLastName);
+            }
         }
         public void Delete(Customer customer) 
         {
-            Console.WriteLine("Customer Successfully Deleted: " + "Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + " No : " + customer.CustomerNo + " Id : " + customer.Id);
+            Console.WriteLine("Customer Successfully Deleted: " + "Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + "\n No : " + customer.CustomerNo + " Customer Id : " + customer.Id);
         }
 
         public void AddCustomer(Customer customer) 
         {
-            Console.WriteLine("Customer Successfully Added: " + "Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + " No : " + customer.CustomerNo + " Id : " + customer.Id);
+            Console.WriteLine("Customer Successfully Added: " + "Name and Lastname : " + customer.CustomerName + "  " + customer.CustomerLastName + "\n No : " + customer.CustomerNo + " Customer Id : " + customer.Id);
         }
     }
 }
