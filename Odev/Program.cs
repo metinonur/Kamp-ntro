@@ -8,64 +8,36 @@ namespace Odev
         
         
         {
-            Person Metin = new Person();
-            Metin.Name = "Metin";
-            Metin.LastName = "ONUR";
-            Metin.Age = 18;
-            Metin.Weight = 71;
-
-            Person Recep = new Person();
-            Recep.Name = "Recep Ali";
-            Recep.LastName = "GÖKMEN";
-            Recep.Age = 20;
-            Recep.Weight = 78;
+            Product Apple = new Product();
+            Apple.Name = "Apple";
+            Apple.Id = 1324;
+            Apple.Price = 10;
+            Apple.Stock = 10000;
 
 
-            Person Mali = new Person();
-            Mali.Name = "Mali";
-            Mali.LastName = "TÜZÜN";
-            Mali.Age = 19;
-            Mali.Weight = 75;
-
-            Person Alp = new Person();
-            Alp.Name = "Alp";
-            Alp.LastName = "AKIŞ";
-            Alp.Age = 19;
-            Alp.Weight = 70;
+            Product Melon = new Product();
+            Melon.Name = "Melon";
+            Melon.Id = 1122;
+            Melon.Price = 5;
+            Melon.Stock = 665;
 
 
-            Person[] Persons = new Person[] { Metin, Mali, Recep, Alp};
+            Product Pear = new Product();
+            Pear.Name = "Pear";
+            Pear.Id = 6645;
+            Pear.Price = 4;
+            Pear.Stock = 4567;
 
-            foreach (var Person in Persons)
+            Product[] products = new Product[] {Melon,Apple,Pear };
+
+            foreach (Product product in products)
             {
-                Console.WriteLine($"Name: {Person.Name }\n------------------- \nLast Name: {Person.LastName}\n------------------- \nAge: {Person.Age}\n------------------- \nWeight: {Person.Weight}\n-------------------");
+                Console.WriteLine("Add product:" + product.Name);
             }
 
-            Console.WriteLine("------------------------Definition is over------------------------");
 
 
-            Console.WriteLine("--_--" +
-                "\n--_--");
-
-
-
-
-
-        }
-        
-
-
-
-
-
-
-            class Person
-               {
-            public string Name { get; set; }
-            public string  LastName { get; set; }
-            public int Age { get; set; }
-            public int Weight { get; set; }
-             }
+        }      
         
     }
 }
