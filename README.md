@@ -1,7 +1,7 @@
 # Kamp-ntro
 
-# KodDepom
+# Kamp-ntro
 Öğrenim ve çalışma sürecim boyunca derlediğim oluşturduğum kodlar bulunmaktadır.
 
-# MyCodeRepository
+# Kamp-ntro
 There are codes that I compiled during my education and learning process.
